@@ -1,9 +1,18 @@
 import { Row } from "antd";
 import styled from "styled-components";
 
-export const ContentSection = styled("section")`
+interface ContentSectionProps {
+  bgImg?: string; // bgImage is optional
+}
+
+export const ContentSection = styled("section")<ContentSectionProps>`
   position: relative;
   padding: 10rem 0 8rem;
+  background-image: url('/img/svg/alpha-1.webp');
+  background-image: url(${(props) => `/img/svg/${props.bgImg}`});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
 
   @media only screen and (max-width: 1024px) {
     padding: 4rem 0 4rem;

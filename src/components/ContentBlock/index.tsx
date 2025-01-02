@@ -25,6 +25,7 @@ const ContentBlock = ({
   t,
   id,
   direction,
+  bgImg,
 }: ContentBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
@@ -32,9 +33,10 @@ const ContentBlock = ({
       behavior: "smooth",
     });
   };
+  console.log(content);
 
   return (
-    <ContentSection>
+    <ContentSection bgImg={bgImg}>
       <Fade direction={direction} triggerOnce>
         <StyledRow
           justify="space-between"
@@ -43,7 +45,7 @@ const ContentBlock = ({
           direction={direction}
         >
           <Col lg={11} md={11} sm={12} xs={24}>
-            <SvgIcon src={icon} width="100%" height="100%" />
+            {icon && <SvgIcon src={icon} width="100%" height="100%" />}
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>

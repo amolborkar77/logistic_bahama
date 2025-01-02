@@ -120,10 +120,10 @@ const Footer = ({ t }: { t: TFunction }) => {
             <NavLink to="/">
               <LogoContainer>
                 <SvgIcon
-                  src="logo.svg"
+                  src="logo_1.webp"
                   aria-label="homepage"
-                  width="101px"
-                  height="64px"
+                  width="200px"
+                  height="30px"
                 />
               </LogoContainer>
             </NavLink>
@@ -137,11 +137,11 @@ const Footer = ({ t }: { t: TFunction }) => {
                 src="twitter.svg"
               />
               <SocialLink
-                href="https://www.linkedin.com/in/lasha-kakabadze/"
+                href="https://www.linkedin.com/in/"
                 src="linkedin.svg"
               />
               <SocialLink
-                href="https://medium.com/@lashakakabadze/"
+                href="https://medium.com/"
                 src="medium.svg"
               />
               <a

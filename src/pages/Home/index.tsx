@@ -1,13 +1,13 @@
 import { lazy } from "react";
 import IntroContent from "../../content/IntroContent.json";
-import MiddleBlockContent from "../../content/MiddleBlockContent.json";
 import AboutContent from "../../content/AboutContent.json";
-import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
+import ProductContent1 from "../../content/ProductContent1.json";
+import ProductContent2 from "../../content/ProductContent2.json";
+import ProductContent3 from "../../content/ProductContent3.json";
 import ContactContent from "../../content/ContactContent.json";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
-const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
@@ -21,28 +21,8 @@ const Home = () => {
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
-        icon="developer.svg"
         id="intro"
-      />
-      <MiddleBlock
-        title={MiddleBlockContent.title}
-        content={MiddleBlockContent.text}
-        button={MiddleBlockContent.button}
-      />
-      <ContentBlock
-        direction="left"
-        title={AboutContent.title}
-        content={AboutContent.text}
-        section={AboutContent.section}
-        icon="graphs.svg"
-        id="about"
-      />
-      <ContentBlock
-        direction="right"
-        title={MissionContent.title}
-        content={MissionContent.text}
-        icon="product-launch.svg"
-        id="mission"
+        bgImg="alpha-1.webp"
       />
       <ContentBlock
         direction="left"
@@ -50,6 +30,36 @@ const Home = () => {
         content={ProductContent.text}
         icon="waving.svg"
         id="product"
+      />
+      <ContentBlock
+        direction="right"
+        title={ProductContent1.title}
+        content={ProductContent1.text}
+        icon="product3.webp"
+        id="product1"
+      />
+      <ContentBlock
+        direction="left"
+        title={ProductContent2.title}
+        content={ProductContent2.text}
+        icon="product2.webp"
+        id="product2"
+      />
+      <ContentBlock
+        direction="right"
+        title={ProductContent3.title}
+        content={ProductContent3.text}
+        icon="product3.webp"
+        id="product3"
+      />
+      <ContentBlock
+        direction="left"
+        title={AboutContent.title}
+        content={AboutContent.text}
+        // section={AboutContent.section}
+        // icon="about.webp"
+        id="about"
+        bgImg="about.webp"
       />
       <Contact
         title={ContactContent.title}
