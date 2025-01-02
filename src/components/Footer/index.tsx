@@ -145,7 +145,7 @@ const Footer = ({ t }: { t: TFunction }) => {
                 src="medium.svg"
               />
               <a
-                href="https://ko-fi.com/Y8Y7H8BNJ"
+                href="https://ko-fi.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
